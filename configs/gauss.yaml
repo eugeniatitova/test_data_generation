@@ -1,0 +1,35 @@
+generate: True
+data_type: ['c','d','d','c','c','d']
+
+discrete_dim: 3
+card: [2, 3, 3]
+
+p: [[0.4, 0.6],
+    [0.6, 0.2, 0.2],
+    [0.5, 0.1, 0.4]]
+
+continuous_dim: 3
+continuous_min: [-3.0, -3.0, -3.0]
+continuous_max: [3.0, 3.0, 3.0]
+
+mu: [0,0,0]
+sigma: [1,1,1]
+corr: [[1, 0.3, 0.6],
+       [0.3, 1, 0.9],
+       [0.6, 0.9, 1]]
+
+input_dim: 11
+hidden_dim: 1024
+latent_dim: 16
+
+kld_divider: 1000
+
+train_samples: 1000
+validation_samples: 100
+generated_samples: 1000
+
+epochs: 20
+batch_size: 4
+learning_rate: 0.001
+
+epochs_to_log: [50, 100, 200, 300, 400, 499]

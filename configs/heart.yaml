@@ -1,0 +1,26 @@
+generate: False
+data_path: 'test/heart.csv'
+
+data_type: ['c','d','d','c','c','d','d','c','d','c','d','d','d','d']
+
+discrete_dim: 9
+card: [2, 4, 2, 3, 2, 3, 5, 4, 2]
+
+continuous_dim: 5
+continuous_min: [29.0, 94.0, 126.0, 71.0, 0.0]
+continuous_max: [77.0, 220.0, 564.0, 202.0, 6.2]
+
+input_dim: 32
+hidden_dim: 256
+latent_dim: 8
+
+kld_divider: 1000
+
+generated_samples: 303
+
+epochs: 20
+batch_size: 8
+learning_rate: 0.005
+
+epochs_to_log: []
+
